@@ -3,7 +3,8 @@
 #include <string>
 using namespace std;
 
-bool isPalindrome(string s) {
+bool isPalindrome(const string& s) {
+	функция должна принимать на вход int!!!
     int n = s.length();
     for (int i = 0; i < n / 2; i++) {
         if (s[i] != s[n - i - 1]) {
